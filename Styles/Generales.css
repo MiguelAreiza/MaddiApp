@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+:root{
+    --Principal: #F57438;
+    --Secondary: #233D4F;
+}
+
+/* Estilos del navbar */
+.navBar{
+    background: #fffe;
+    width: 100%;
+    height: 80px;
+    max-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.left{    
+    min-width: 280px;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    padding: 10px 20px;
+}
+.rigth{
+    min-width: 280px;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}  
+.imageLogo{
+    width: 230px;
+    cursor: pointer;
+}
+.optNavBar{
+    border: none;
+    background: none;                                                                                        
+    margin-right: 30px;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+}
+.optNavBar:hover{
+    color: var(--Principal);
+    font-weight: 700;
+}
+.optNavbarSelected{    
+    color: var(--Principal);
+    font-weight: 700;
+    border-bottom: 2px solid;
+    color: var(--Principal);
+    transform: translateY(-8px);
+}
+#btnStart{    
+    width: 230px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(95.34deg, #FF6920 0%, #FF6A88 100%);
+    padding: 10px;
+    transition: .6s;  
+}
+#btnStart:hover{
+    transform: scale(1.1);
+}
+
+/* Estilos del pagecontent */
+.pageContent{
+    background-image: url('../assets/images/Background.svg');
+    padding: calc(80px + 1rem) 0 1rem;
+    min-height: calc(100vh - 200px);
+}
+
+/* Estilos de Footer */
+.footer{
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    background: #F4F4F4;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right,  #FF6920 0%, #FF6A88 100%) 1 0 0 0 stretch;
+}
+.copyRigth{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.language{    
+    width: 10%;
+    min-width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contactUs{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyRigth > img{
+    display: block;
+    width: 300px;
+}
+.copyRigth > label{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.language > img{
+    width: 60px;
+    margin: 5px;
+    transition: .6s;
+    cursor: pointer;
+}
+.language > img:hover{
+    transform: scale(1.1);
+}
+.contactUs > button{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border: none;
+    background-size: 100% 100%;
+    transition: .6s;
+    cursor: pointer;
+}
+.linkedIn{
+    background-image: url('../assets/images/contact/LinkedIn.svg');    
+}
+.instagram{
+    background-image: url('../assets/images/contact/Instagram.svg');
+}
+.tikTok{
+    background-image: url('../assets/images/contact/TikTok.svg');
+}
+.whatsApp{
+    background-image: url('../assets/images/contact/WhatsApp.svg');
+}
+.linkedIn:hover, .instagram:hover, .tikTok:hover, .whatsApp:hover{
+    transform: scale(1.1);
+}
+
+/* Estilos de los toastr */
+#notifications{
+    position: fixed;
+    z-index: 9999999;
+    pointer-events: none;
+    bottom: 12px;
+    right: 12px;
+}
+.toast-info{
+    background: #2aa3c3;
+    background-image: url('../assets/images/toastr/Info.png');
+}
+.toast-success{
+    background: #129620;
+    background-image: url('../assets/images/toastr/Success.png');
+}
+.toast-error{
+    background: #c53002;
+    background-image: url('../assets/images/toastr/Error.png');
+}
+.toast-warning{
+    background: #ffaa00;
+    background-image: url('../assets/images/toastr/Warning.png');
+}
+.toast{
+    position: relative;
+    margin-bottom:6px;
+    padding: 15px 15px 15px 50px;
+    width: 300px;
+    border-radius: 1vh;
+    background-position: 15px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    box-shadow: 0 0 8px #000;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: auto;
+    word-wrap: break-word;
+}
+.toast:hover{
+    box-shadow: 0 0 12px #999;
+    cursor: pointer;
+}
+.toast > b{
+    display: block;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 1px #000;
+}
