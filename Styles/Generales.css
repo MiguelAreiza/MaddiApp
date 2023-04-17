@@ -246,6 +246,10 @@ body::-webkit-scrollbar{
     .rigth{
         display: none;
     }
+    .inicio > #btnStart{
+        display: none;
+        margin: 5vh auto;
+    }
     .footer{
         height: 270px;
         max-height: 270px;

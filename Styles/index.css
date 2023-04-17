@@ -43,6 +43,10 @@
     font-weight: 600;
     color: var(--Secondary);
 }
+.inicio > #btnStart{
+    display: none;
+    margin: 5vh auto;
+}
 .inicio > span{
     display: block;
     width: 30px;
@@ -184,5 +188,10 @@
 @media (max-width: 780px) {    
     .servicios > .container, .beneficios > .container{
         justify-content: left;
+    }
+}
+@media (max-width: 870px) {
+    .inicio > #btnStart{
+        display: block;
     }
 }
