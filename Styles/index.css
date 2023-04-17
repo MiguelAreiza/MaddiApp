@@ -1,7 +1,7 @@
 .section{
     width: 100%;
-    height: 500px;
-    min-height: 500px;
+    height: 600px;
+    min-height: 600px;
     padding: 1rem;    
 }
 .inicio > img{
@@ -93,8 +93,8 @@
     transform: scale(1.1);
 }
 .beneficios{
-    height: 600px;
-    min-height: 600px;
+    height: 650px;
+    min-height: 650px;
     background: linear-gradient(45deg, #df9ea2 20%, #8a87d8 50%);
 }
 .beneficios > label{
