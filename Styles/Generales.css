@@ -135,8 +135,7 @@ body::-webkit-scrollbar{
 }
 .copyRigth > img{
     display: block;
-    width: 300px;    
-    height: 300px;
+    width: 300px;
 }
 .copyRigth > label{
     display: block;
@@ -163,15 +162,19 @@ body::-webkit-scrollbar{
     cursor: pointer;
 }
 .linkedIn{
+    background: none;
     background-image: url('../assets/images/contact/LinkedIn.svg');    
 }
 .instagram{
+    background: none;
     background-image: url('../assets/images/contact/Instagram.svg');
 }
 .tikTok{
+    background: none;
     background-image: url('../assets/images/contact/TikTok.svg');
 }
 .whatsApp{
+    background: none;
     background-image: url('../assets/images/contact/WhatsApp.svg');
 }
 .linkedIn:hover, .instagram:hover, .tikTok:hover, .whatsApp:hover{
@@ -242,6 +245,37 @@ body::-webkit-scrollbar{
 @media (max-width: 870px) {
     .rigth{
         display: none;
+    }
+    .footer{
+        height: 250px;
+        max-height: 250px;
+        flex-wrap: wrap;
+    }
+    .copyRigth{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3vh;
+    }
+    .language{    
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .contactUs{
+        width: 100%;
+    }
+    .copyRigth > img{
+        width: 300px;
+    }
+    .language > img{
+        margin: 2vh 5px;
+        width: 50px;
+    }
+    .contactUs > button{
+        width: 60px;
+        height: 60px;
+        margin: 6px;
+        cursor: pointer;
     }
 }
 @media (max-width: 620px) {
