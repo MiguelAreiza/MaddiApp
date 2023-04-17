@@ -274,8 +274,7 @@ body::-webkit-scrollbar{
     .contactUs > button{
         width: 60px;
         height: 60px;
-        margin: 6px;
-        cursor: pointer;
+        margin: 10px 6px;
     }
 }
 @media (max-width: 620px) {
