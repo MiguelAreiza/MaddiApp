@@ -3,7 +3,6 @@
 $(document).ready( () => {
 
     let mitad = $('.servicios > .container')[0].scrollWidth / 2;
-    console.log(mitad);
     $('.servicios > .container')[0].scrollTo(mitad - 230, 0);    
     $('.beneficios > .container')[0].scrollTo(mitad -230, 0);
 
