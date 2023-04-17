@@ -63,9 +63,9 @@
     font-weight: 700;
     padding: 1.2vh 0;
 }
-.card > .info{    
+.card > .description{    
     display: block;
     width: 100%;
-    font-size: .575rem;
+    font-size: .8rem;
     padding: 1vh 0;
 }
