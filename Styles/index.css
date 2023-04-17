@@ -68,6 +68,7 @@
     align-items: center;
     margin: 5vh 0 6vh;
     overflow-x: scroll;
+    scroll-snap-type: mandatory;
 }
 .servicios > .container::-webkit-scrollbar{
     display: none;
@@ -75,6 +76,7 @@
 .servicios > .container > img{
     width: 230px;
     margin: 0 15px;
+    scroll-snap-align: center;
 }
 .servicios > #btnMasServicios{
     display: block;
@@ -121,6 +123,7 @@
     align-items: center;
     margin: 5vh 0 6vh;
     overflow-x: scroll;
+    scroll-snap-type: mandatory;
 }
 .beneficios > .container::-webkit-scrollbar{
     display: none;
@@ -128,6 +131,7 @@
 .beneficios > .container > img{
     width: 230px;
     margin: 0 15px;
+    scroll-snap-align: center;
 }
 .beneficios > #btnMasBeneficios{
     display: block;
@@ -174,4 +178,11 @@
 .nosotros > #btnStart{
     display: block;
     margin: 5vh auto 10vh;
+}
+
+/* Responsive */
+@media (max-width: 780px) {    
+    .servicios > .container, .beneficios > .container{
+        justify-content: left;
+    }
 }
