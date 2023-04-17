@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaddiApp</title>
-    
+
     <link rel="shortcut icon" href="https://maddiapp.com/assets/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="https://maddiapp.com/assets/images/favicon.ico" type="image/x-icon">
     
@@ -38,10 +38,10 @@
     <div class="base">        
         <header class="navBar">
             <div class="left">
-                <img class="imageLogo" src="./assets/images/LogoMaddiApp.svg" alt="Logo MaddiApp" draggable="false">
+                <img id="btnHome" class="imageLogo" src="../../assets/images/LogoMaddiApp.svg" alt="Logo MaddiApp" draggable="false">
             </div>
             <div class="center">
-                <button class="optNavBar optNavbarSelected" id="optInicio">Inicio</button>
+                <button class="optNavBar" id="optInicio">Inicio</button>
                 <button class="optNavBar" id="optServicios">Servicios</button>
                 <button class="optNavBar" id="optBeneficios">Beneficios</button>
                 <button class="optNavBar" id="optNosotros">Nosotros</button>
@@ -51,52 +51,55 @@
             </div>
         </header>
         <main class="pageContent">
-            <div class="section inicio">
-                <img src="./assets/images/Logo.svg" alt="Logo MaddiApp corto" draggable="false">
-                <label class="eslogan">¡Hay que crecer!</label>
-                <label class="titleInfo">Es hora de llevar tu negocio al siguiente nivel</label>
-                <p class="info">¿Quien dice que los negocios pequeños no se pueden convertir en las compañias mas grandes del pais?</p>
-                <button alt="Comenzar ahora" id="btnStart">¡COMENZAR AHORA!</button>
-                <span></span>
-            </div>
-            <div class="section servicios">
-                <label class="title">En que somos los mejores</label>
-                <div class="container">
-                    <img src="./assets/images/Services/Desarrollo.svg" alt="servicio de desarrollo" draggable="false">
-                    <img src="./assets/images/Services/Diseño.svg" alt="servicio de diseño UI/UX" draggable="false">
-                    <img src="./assets/images/Services/Cliente.svg" alt="servicio de experiencia del cliente" draggable="false">
+            <label class="title">Quienes somos</label>
+            <div class="section">
+                <div class="paragraph">
+                    <p>En MaddiApp, somos apasionados por la tecnología y creemos firmemente que la innovación es clave para el éxito en el mercado actual. Estamos orgullosos de estar a la vanguardia del desarrollo de software a medida y del diseño de experiencias de usuario avanzadas, lo que nos permite ofrecer soluciones digitales personalizadas y de alta calidad a nuestros clientes.</p>
+                    <p>Nuestra dedicación a la excelencia y la satisfacción del cliente es insuperable, y nos enorgullece establecer relaciones duraderas con nuestros clientes basadas en la confianza y el respeto mutuo. Trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades específicas y desarrollar soluciones que satisfagan sus objetivos comerciales a largo plazo.</p>
                 </div>
-                <button id="btnMasServicios">Ver mas servicios</button>
-            </div>
-            <div class="section beneficios">
-                <label class="title">Conoce los beneficios de trabajar con nosotros</label>
-                <div class="container">
-                    <img src="./assets/images/Benefits/Lucro.svg" alt="Beneficio de lucro" draggable="false">
-                    <img src="./assets/images/Benefits/Flexibilidad.svg" alt="Beneficio de flexibilidad" draggable="false">
-                    <img src="./assets/images/Benefits/Presupuesto.svg" alt="Beneficio de presupuesto" draggable="false">
+                <div class="image">
+                    <img src="../../assets/images/Nosotros/TeamGoals.svg" alt="Trabajando juntos podemos" draggable="false">
                 </div>
-                <button id="btnMasBeneficios">Ver mas beneficios</button>
             </div>
-            <div class="section nosotros">
-                <label class="titleInfo">Quienes somos</label>
-                <img src="./assets/images/Nosotros/MeetWork.svg" alt="Imagen equipo desarrollo" draggable="false">
-                <p class="info">En MaddiApp, somos apasionados por la tecnología y creemos firmemente que la innovación es clave para el éxito en el mercado actual. Estamos orgullosos de estar a la vanguardia del desarrollo de software a medida y del diseño de experiencias de usuario avanzadas, lo que nos permite ofrecer soluciones digitales personalizadas y de alta calidad a nuestros clientes...</p>
-                <button alt="Comenzar ahora" id="btnUs">Conocer mas</button>
+            <div class="section">
+                <div class="image">
+                    <img src="../../assets/images/Nosotros/MeetWork.svg" alt="Nosotros somos un complemento" draggable="false">
+                </div>
+                <div class="paragraph">
+                    <p>Contamos con un equipo altamente capacitado que trabajan juntos para desarrollar soluciones innovadoras y eficientes. Nuestra atención a los detalles, la experiencia en la industria y el enfoque en el cliente nos permiten brindar un servicio excepcional y superar las expectativas de nuestros clientes.</p>
+                    <p>Si estás buscando una solución de software a medida que satisfaga tus necesidades comerciales específicas, no dudes en ponerte en contacto con nosotros. Estamos listos para brindarte nuestra experiencia y conocimientos en todo momento para ayudarte a alcanzar tus objetivos digitales y llevar tu negocio al siguiente nivel. </p>
+                    <p>¡Contáctanos hoy para saber más sobre cómo podemos ayudarte!</p>
+                </div>
             </div>
-            <div class="section contacto">
-                <label class="titleInfo">¿Que esperas para contactarnos?</label>
-                <p class="info">Si tu crees en tu negocio, nosotros creeremos en ti.</p>
-                <button alt="Comenzar ahora" id="btnStart">¡COMENZAR AHORA!</button>
+            <div class="section">
+                <div class="card">
+                    <img src="../../assets/images/ProvisionalImage.svg" alt="Foto del CEO" draggable="false">
+                    <label class="name">Miguel Angel Areiza</label>
+                    <label class="jobTitle">Chief Executive Officer</label>
+                    <label class="description">"Como CEO, lidero nuestro equipo hacia el éxito empresarial y la innovación tecnológica".</label>
+                </div>
+                <div class="card">
+                    <img src="../../assets/images/ProvisionalImage.svg" alt="Foto del CTO" draggable="false">
+                    <label class="name">Luis David Lopera</label>
+                    <label class="jobTitle">Chief Technology Officer</label>
+                    <label class="description">"Como CTO, lidero la transformación digital para hacer realidad tus ideas más audaces".</label>
+                </div>
+                <div class="card">
+                    <img src="../../assets/images/ProvisionalImage.svg" alt="Foto del COO" draggable="false">
+                    <label class="name">Danny Mateo Hernández</label>
+                    <label class="jobTitle">Chief Operating Office</label>
+                    <label class="description">"Como COO, optimizo las operaciones de la empresa para impulsar el crecimiento y la eficiencia".</label>
+                </div>
             </div>
         </main>
         <footer class="footer">
             <div class="copyRigth">                
-                <img src="./assets/images/LogoMaddiApp.svg" alt="Logo MaddiApp" draggable="false">
+                <img src="../../assets/images/LogoMaddiApp.svg" alt="Logo MaddiApp" draggable="false">
                 <label>&copy;Todos los derechos reservados</label>                
             </div>
             <div class="language">
-                <img id="languageES" src="./assets/images/icons/LanguageES.svg" alt="Idioma Español" draggable="false">
-                <img id="languageEN" src="./assets/images/icons/LanguageEN.svg" alt="Idioma Ingles" draggable="false">
+                <img id="languageES" src="../../assets/images/icons/LanguageES.svg" alt="Idioma Español" draggable="false">
+                <img id="languageEN" src="../../assets/images/icons/LanguageEN.svg" alt="Idioma Ingles" draggable="false">
             </div>
             <div class="contactUs">
                 <button rel="noopener" class="linkedIn"></button>
@@ -111,12 +114,12 @@
     </div>
 
     <!-- Generales -->
-    <link rel="stylesheet" href="./Styles/Generales.css">
-    <script src="./Scripts/Generales.js"></script>
+    <link rel="stylesheet" href="../../Styles/Generales.css">
+    <script src="../../Scripts/Generales.js"></script>
 
     <!-- Propios -->
-    <link rel="stylesheet" href="./Styles/index.css">
-    <script src="./Scripts/index.js"></script>
+    <link rel="stylesheet" href="../../Styles/nosotros.css">
+    <script src="../../Scripts/nosotros.js"></script>
 
 </body>
 </html>

@@ -87,6 +87,10 @@ $(document).ready( () => {
 
     });
 
-    
+    $('#btnUs').click( () => {
+
+        goLocation.ChangeView('./Views/Nosotros/');
+
+    });
 
 });

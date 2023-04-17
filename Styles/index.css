@@ -1,4 +1,4 @@
-/* Estilos de Footer */
+/* Estilos del pagecontent */
 .section{
     height: 600px;
     min-height: 600px;
@@ -41,7 +41,6 @@
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--Secondary);
 }
 .inicio > #btnStart{
     display: none;
@@ -58,7 +57,7 @@
 .servicios{
     padding: 1rem 0;    
 }
-.servicios > label{
+.servicios > .title{
     display: block;
     width: 100%;
     margin: auto;
@@ -111,7 +110,7 @@
     background: linear-gradient(45deg, #df9ea2 20%, #8a87d8 50%);
     padding: 1rem 0;
 }
-.beneficios > label{
+.beneficios > .title{
     display: block;
     width: 100%;
     max-width: 600px;
@@ -163,13 +162,58 @@
 .nosotros > .titleInfo{
     display: block;
     width: 100%;
+    margin: 10vh auto 2vh;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+.nosotros > img{
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+.nosotros > .info{
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.nosotros > #btnUs{
+    display: block;
+    width: 230px;
+    height: 50px;
+    margin: 8vh auto 4vh;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 600;
+    background: #000;
+    background-image: url('../assets/images/icons/Arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: center right 22px;
+    padding: 0 38px 0;
+    padding: 10px;
+    transition: .6s; 
+}
+.nosotros > #btnUs:hover{
+    transform: scale(1.1);
+}
+.contacto > .titleInfo{
+    display: block;
+    width: 100%;
     max-width: 700px;
     margin: 15vh auto 3vh;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 900;
 }
-.nosotros > .info{
+.contacto > .info{
     display: block;
     width: 100%;
     max-width: 400px;
@@ -179,7 +223,7 @@
     font-weight: 600;
     color: var(--Secondary);
 }
-.nosotros > #btnStart{
+.contacto > #btnStart{
     display: block;
     margin: 5vh auto 10vh;
 }
