@@ -247,8 +247,8 @@ body::-webkit-scrollbar{
         display: none;
     }
     .footer{
-        height: 250px;
-        max-height: 250px;
+        height: 270px;
+        max-height: 270px;
         flex-wrap: wrap;
     }
     .copyRigth{
@@ -263,6 +263,7 @@ body::-webkit-scrollbar{
     }
     .contactUs{
         width: 100%;
+        margin-bottom: 20px;
     }
     .copyRigth > img{
         width: 300px;
