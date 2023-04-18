@@ -224,7 +224,7 @@ body::-webkit-scrollbar{
     box-shadow: 0 0 12px #999;
     cursor: pointer;
 }
-.toast > b{
+.toast > .titleToast{
     display: block;
     font-size: 1.1rem;
     text-shadow: 1px 1px 1px #000;

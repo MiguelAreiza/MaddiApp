@@ -22,29 +22,29 @@ function Redirect() {
 
 function Toastr() {
 
-    this.Info = (mesagge, title) => { 
-        newMesagge(mesagge, title, 'toast-info');
+    this.Info = (mesagge, title, time) => {
+        newMesagge(mesagge, title, 'toast-info', time);
     }
 
-    this.Success = (mesagge, title) => {
-        newMesagge(mesagge, title, 'toast-success');
+    this.Success = (mesagge, title, time) => {
+        newMesagge(mesagge, title, 'toast-success', time);
     }
 
-    this.Error = (mesagge, title) => {
-        newMesagge(mesagge, title, 'toast-error');
+    this.Error = (mesagge, title, time) => {
+        newMesagge(mesagge, title, 'toast-error', time);
     }
 
-    this.Warning = (mesagge, title) => {
-        newMesagge(mesagge, title, 'toast-warning');
+    this.Warning = (mesagge, title, time) => {
+        newMesagge(mesagge, title, 'toast-warning', time);
     }
     
-    function newMesagge(mesagge, title, type, id = newId()) {
+    function newMesagge(mesagge, title, type, time = 5000, id = newId()) {
         
         let data = $('#notifications :last-child').html() || '';
 
         if (!data.includes(mesagge)) {
             
-            title ? title = `<b class="title">${title}</b>`: title = '';
+            title ? title = `<b class="titleToast">${title}</b>`: title = '';
 
             $('#notifications').append(`<div class="toast ${type}" id="${id}">${title}${mesagge}</div>`);
     
@@ -54,7 +54,7 @@ function Toastr() {
         
             setTimeout(() => {
                 $(`#${id}`).remove();
-            }, 7000);
+            }, time);
 
         }
 
@@ -176,7 +176,7 @@ $('#languageES').click( () => {
     let lib = new google.translate.TranslateService();
     lib.translatePage('en', 'es', function () {});
     
-    toastr.Success('Traducción a español');
+    toastr.Success('Traducción a español', null, 1500);
     
 });
 
@@ -185,6 +185,6 @@ $('#languageEN').click( () => {
     let lib = new google.translate.TranslateService();
     lib.translatePage('es', 'en', function () {});
     
-    toastr.Success('Translate to english');
+    toastr.Success('Translate to english', null, 1500);
 
 });
