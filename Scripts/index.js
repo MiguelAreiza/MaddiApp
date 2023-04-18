@@ -2,9 +2,13 @@
 
 $(document).ready( () => {
 
-    let mitad = $('.servicios > .container')[0].scrollWidth / 2;
-    $('.servicios > .container')[0].scrollTo(mitad - 230, 0);    
-    $('.beneficios > .container')[0].scrollTo(mitad -230, 0);
+    setTimeout(() => {
+        
+        let mitad = $('.servicios > .container')[0].scrollWidth / 2;
+        $('.servicios > .container')[0].scrollTo(mitad - 230, 0);    
+        $('.beneficios > .container')[0].scrollTo(mitad -230, 0);
+
+    }, 500);
 
     $('#optInicio').click( () => {
 
@@ -90,6 +94,12 @@ $(document).ready( () => {
     $('#btnUs').click( () => {
 
         goLocation.ChangeView('./views/nosotros/');
+
+    });
+
+    $('#btnMasServicios').click( () => {
+
+        goLocation.ChangeView('./views/servicios/');
 
     });
 
