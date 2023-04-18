@@ -101,6 +101,12 @@ $(document).ready( () => {
 
         goLocation.ChangeView('./views/servicios/');
 
+    });    
+
+    $('#btnStart, #btnStart, #btnStart').click( () => {
+
+        goLocation.ChangeView('./views/contacto/');
+
     });
 
 });

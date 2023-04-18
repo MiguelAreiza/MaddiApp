@@ -1,0 +1,143 @@
+/* Estilos del pagecontent */
+.pageContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+}
+.title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin: 3vh 0;
+}
+.section{
+    width: 50%;
+    min-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    padding-right: 4vh;
+}
+.section > .titleLink{
+    display: block;
+    width: 80%;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.section > .link{    
+    display: block;
+    width: 80%;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+    padding: 10px 0 20px;
+}
+.imagesContact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh 0;
+}
+.imagesContact > img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+.section > img{
+    width: 310px;
+}
+.section > .eslogan{
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--Secondary);
+}
+.section > .titleInfo{
+    display: block;
+    width: 100%;
+    margin: 1vh 0 2vh;
+    font-size: 2.5rem;
+    font-weight: 900;
+    background: linear-gradient(to right, #FF6920 0%, #FF6A88 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.section > .info{
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#formContact{
+    width: 100%;
+    margin: 5vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    width: 100%;
+    margin: .5vh 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input > .titleInput{
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 3px;
+}
+.input > input, .input > textarea{
+    display: block;
+    width: 100%;
+    padding: .5vh 1vh;
+    border-radius: 1vh;
+    border: 1px solid #3333;
+    outline: none;
+}
+.input > textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+}
+#btnSendForm{
+    width: 100%;
+    margin-top: 4vh;
+    padding: 1.5vh;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #FF6920 0%, #FF6A88 100%);
+    color: #fff;
+    border: none;
+    border-radius: 1vh;
+    transition: .6s;
+}
+#btnSendForm:hover{
+    transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .pageContent{
+        flex-direction: column-reverse;
+    }
+    .section{
+        padding: 0 2vh;
+        justify-content: left;
+    }
+}

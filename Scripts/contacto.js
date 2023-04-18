@@ -8,10 +8,4 @@ $(document).ready( () => {
 
     });
 
-    $('#btnStart').click( () => {
-
-        goLocation.ChangeView('../contacto/');
-
-    });
-
 });
