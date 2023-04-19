@@ -16,9 +16,15 @@ $(document).ready( () => {
 
     });
 
-    $('#btnStart').click( () => {
+    $('#btnStart, #btnStart').click( () => {
 
         goLocation.ChangeView('../contacto/');
+
+    });
+
+    $(window).on('load', () => {
+        
+        $('spinner').hide();
 
     });
 

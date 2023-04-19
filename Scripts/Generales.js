@@ -98,6 +98,12 @@ function GoLocation() {
             
             $('body').html(await response.text());
 
+            setTimeout(() => {
+                
+                $('spinner').hide();
+
+            }, 300);
+
         }).catch(() => {
 
             toastr.Error('Error en la transaccion');
